@@ -10,8 +10,8 @@ Another big constraint of this game is that every agent has a limited amount of 
 <br />
 The overall score of each player is the sum of rewards gained for every turn. The game will terminate when there is no fruit left in the box or when a player has run out of time.
 
-## Code
-## input.txt
+## Code Explanation
+## 1. input.txt
 > __First line:__ integer n, the width and height of the square board (0 < n <= 26)<br />
 > __Second line:__ integer p, the number of fruit types (0 < p <= 9)<br />
 > __Third line:__ strictly positive floating point number, your remaining time in seconds<br />
@@ -42,7 +42,7 @@ The overall score of each player is the sum of rewards gained for every turn. Th
 2200022231
 ```
 
-## fruitGame.java
+## 2. fruitGame.java
 - My agent should implement the minimax algorithm with alpha-beta pruning. 
 ```
 public static Position decideNextMove(int N, int P, char[][] board)
@@ -50,7 +50,7 @@ public static Stack<Position> makeChildrenStack(Node n, int N)
 public static char[][] updateBoard_star(char[][] board,int N)
 ```
 
-## output.txt
+## 3. output.txt
 > __First line:__ your selected move, represented as two characters:<br />
 >              * A letter from A to Z representing the column number (where A is the leftmost column, B is the next one to the right, etc), and
 >              * A number from 1 to 26 representing the row number (where 1 is the top row, 2 is the row below it, etc).<br />
