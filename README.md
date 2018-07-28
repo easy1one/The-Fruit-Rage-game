@@ -1,7 +1,7 @@
-# [AI]The-Fruit-Rage-game
+# [AI] The-Fruit-Rage-game
  A game agent implemented by the minimax algorithm with alpha-beta pruning to win the Fruit Range game that captures the nature of a zero sum two player game with strict limitation on allocated time
 
-# Highlevel Description
+## High level Description
 The Fruit Rage is a two player game in which each player tries to maximize his/her share from a batch of fruits randomly placed in a box. The box is divided into cells and each cell is either empty or filled with one fruit of a specific type.
 <br />
 At the beginning of each game, all cells are filled with fruits. Players play in turn and can pick a cell of the box in their own turn and claim all fruit of the same type, in all cells that are connected to the selected cell through horizontal and vertical paths. For each selection or move the agent is rewarded a numeric value which is the square of the number of fruits claimed in that move. Once an agent picks the fruits from the cells, their empty place will be filled with other fruits on top of them (which fall down due to gravity), if any. In this game, no fruit is added during game play. Hence, players play until all fruits have been claimed.
@@ -10,7 +10,7 @@ Another big constraint of this game is that every agent has a limited amount of 
 <br />
 The overall score of each player is the sum of rewards gained for every turn. The game will terminate when there is no fruit left in the box or when a player has run out of time.
 
-# Code
+## Code
 ## input.txt
 > __First line:__ integer n, the width and height of the square board (0 < n <= 26)<br />
 > __Second line:__ integer p, the number of fruit types (0 < p <= 9)<br />
