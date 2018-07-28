@@ -16,6 +16,22 @@ The overall score of each player is the sum of rewards gained for every turn. Th
 > __Second line:__ integer p, the number of fruit types (0 < p <= 9)<br />
 > __Third line:__ strictly positive floating point number, your remaining time in seconds<br />
 > __Next n lines:__ the n x n board, with one board row per input file line, and n characters (plus end- of-line marker) on each line. Each character can be either a digit from 0 to p-1, or a * to denote an empty cell. Note: for ease of parsing, the extra horizontal and vertical lines shown in figures 1 – 5 will not be present in the actual input.txt (see below for examples).
+- __For example,__
+```
+10
+4
+1.276
+3102322310
+0121232013
+3021111113
+0221031132
+0230011012
+0323321010
+2003022012
+2202200021
+0130000020
+2200022231
+```
 
 ## fruitGame.java
 - My agent should implement the minimax algorithm with alpha-beta pruning. 
@@ -30,5 +46,17 @@ public static char[][] updateBoard_star(char[][] board,int N)
 >              * A letter from A to Z representing the column number (where A is the leftmost column, B is the next one to the right, etc), and
 >              * A number from 1 to 26 representing the row number (where 1 is the top row, 2 is the row below it, etc).<br />
 > __Next n lines:__ the n x n board just after your move and after gravity has been applied to make any fruits fall into holes created by your move taking away some fruits (like in figure 3).
-
-
+- __For example, one possible output could be __
+```
+G8
+31******10
+010*****13
+3022322*13
+0221232*32
+0221111*12
+0331031310
+2020011012
+2203321121
+0103022120
+2232222231
+```
