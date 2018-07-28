@@ -12,9 +12,9 @@ The overall score of each player is the sum of rewards gained for every turn. Th
 
 # Code
 ## input.txt
-> __First line:__ integer n, the width and height of the square board (0 < n <= 26)
-> __Second line:__ integer p, the number of fruit types (0 < p <= 9)
-> __Third line:__ strictly positive floating point number, your remaining time in seconds
+> __First line:__ integer n, the width and height of the square board (0 < n <= 26)<br />
+> __Second line:__ integer p, the number of fruit types (0 < p <= 9)<br />
+> __Third line:__ strictly positive floating point number, your remaining time in seconds<br />
 > __Next n lines:__ the n x n board, with one board row per input file line, and n characters (plus end- of-line marker) on each line. Each character can be either a digit from 0 to p-1, or a * to denote an empty cell. Note: for ease of parsing, the extra horizontal and vertical lines shown in figures 1 – 5 will not be present in the actual input.txt (see below for examples).
 
 ## fruitGame.java
@@ -26,9 +26,9 @@ public static char[][] updateBoard_star(char[][] board,int N)
 ```
 
 ## output.txt
-> __First line:__ your selected move, represented as two characters:
-  * A letter from A to Z representing the column number (where A is the leftmost column, B is the next one to the right, etc), and
-  * A number from 1 to 26 representing the row number (where 1 is the top row, 2 is the row below it, etc).
+> __First line:__ your selected move, represented as two characters:<br />
+>              * A letter from A to Z representing the column number (where A is the leftmost column, B is the next one to the right, etc), and
+>              * A number from 1 to 26 representing the row number (where 1 is the top row, 2 is the row below it, etc).<br />
 > __Next n lines:__ the n x n board just after your move and after gravity has been applied to make any fruits fall into holes created by your move taking away some fruits (like in figure 3).
 
 
